@@ -17,7 +17,14 @@
 # 個別疾病Excel・履歴データ
 diseases/
 nesid_historical/
+nesid_2024/
+weekly_extracted/
 population/
+
+# scripts/ 下の大容量集計データ（dashboard.html に既に埋め込み済み）
+scripts/nesid_2024.json
+scripts/nesid_pref_data.json
+scripts/annual_incidence.json
 
 # バックアップ・ログ
 *.bak
