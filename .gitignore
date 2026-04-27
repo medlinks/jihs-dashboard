@@ -1,0 +1,44 @@
+# ── 生データ・大容量ファイルは GitHub に置かない ──
+2013/
+2014/
+2015/
+2016/
+2017/
+2018/
+2019/
+2020/
+2021/
+2022/
+2023/
+2024/
+2025/
+2026/
+
+# 個別疾病Excel・履歴データ
+diseases/
+nesid_historical/
+population/
+
+# バックアップ・ログ
+*.bak
+*.bak.*
+*_log.txt
+collect_log.txt
+pipeline_log.txt
+
+# 開発用 workspace
+skill-dev/
+japanese soft/
+idwr_2026_week14/
+__pycache__/
+*.pyc
+
+# 中間ファイル
+process_w*.py
+extract_w*.py
+alerts_pending.json
+PMID_*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db

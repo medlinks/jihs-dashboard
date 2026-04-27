@@ -1,0 +1,26 @@
+{
+  "processed_weeks": [
+    "2026-W11",
+    "2026-W12",
+    "2026-W13",
+    "2026-W14",
+    "2026-W15"
+  ],
+  "last_run": "2026-04-27T03:11:40.825639",
+  "2026-W11_updated": 87,
+  "2026-W12_updated": 87,
+  "2026-W13_updated": 87,
+  "2026-W14_updated": 0,
+  "2026-W15_updated": 87,
+  "last_run_result": {
+    "date": "2026-04-27",
+    "status": "success",
+    "provisional": "W16/W17/W18 未公開（404）",
+    "pdf": "更新不要（W16以降未公開、最新公開はW15）",
+    "nesid_2025": "確認スキップ（4-6月期だが既に未公開記録あり）",
+    "alerts_added": 0,
+    "alerts_deleted": 0,
+    "alerts_total": 12,
+    "note": "新しいデータなし。dashboard.html は変更なし"
+  }
+}
