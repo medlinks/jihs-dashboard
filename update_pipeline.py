@@ -146,7 +146,7 @@ def embed_into_dashboard():
             new_data = json.load(f)
         compact = json.dumps(new_data, ensure_ascii=False, separators=(',', ':'))
 
-        # annual_incidence
+        # annual_incidence (個別マーカ方式)
         ai_marker = 'DATA.annual_incidence = '
         ai_idx = html.find(ai_marker)
         if ai_idx != -1:
@@ -156,17 +156,49 @@ def embed_into_dashboard():
                 html = html[:ai_idx] + ai_marker + ai_json + html[end:]
                 updated_sections.append('annual_incidence')
 
-        # weekly_trends / speed_trends etc. - full replace via DATA= block
-        # Find the combined DATA object initialization
-        for key in ['weekly_trends', 'speed_trends', 'weekly_pref', 'speed_pref']:
-            marker = f'DATA.{key} = '
-            idx = html.find(marker)
-            if idx != -1 and key in new_data:
-                end = html.find(';\n', idx)
+        # ── const DATA = {...}; ブロック全体を置換 ──
+        # speed_trends/weekly_trends/speed_pref/weekly_pref を含むメイン辞書
+        data_marker = 'const DATA = '
+        idx = html.find(data_marker)
+        if idx != -1:
+            start = idx + len(data_marker)
+            # 直後の '{' から対応する '};' までブレース数で位置特定
+            if html[start] == '{':
+                depth = 0
+                in_str = False
+                escape = False
+                end = -1
+                for i in range(start, len(html)):
+                    ch = html[i]
+                    if escape:
+                        escape = False
+                        continue
+                    if ch == '\\':
+                        escape = True
+                        continue
+                    if ch == '"' and not escape:
+                        in_str = not in_str
+                        continue
+                    if in_str:
+                        continue
+                    if ch == '{':
+                        depth += 1
+                    elif ch == '}':
+                        depth -= 1
+                        if depth == 0:
+                            end = i + 1  # 直後の '}' まで含む
+                            break
                 if end != -1:
-                    val_json = json.dumps(new_data[key], ensure_ascii=False, separators=(',', ':'))
-                    html = html[:idx] + marker + val_json + html[end:]
-                    updated_sections.append(key)
+                    # ';' をスキップ
+                    payload = {
+                        'speed_trends': new_data.get('speed_trends', {}),
+                        'weekly_trends': new_data.get('weekly_trends', {}),
+                        'speed_pref': new_data.get('speed_pref', {}),
+                        'weekly_pref': new_data.get('weekly_pref', {}),
+                    }
+                    new_block = json.dumps(payload, ensure_ascii=False, separators=(',', ':'))
+                    html = html[:start] + new_block + html[end:]
+                    updated_sections.append('DATA(const block)')
 
     # ── NESID all_years ──
     nesid_ay_path = Path(__file__).parent.parent.parent / 'nesid_all_years.json'
