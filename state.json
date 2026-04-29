@@ -4,27 +4,29 @@
     "2026-W12",
     "2026-W13",
     "2026-W14",
-    "2026-W15"
+    "2026-W15",
+    "2026-W16"
   ],
-  "last_run": "2026-04-28T01:17:47.663650",
+  "last_run": "2026-04-29T04:45:04.368313",
   "2026-W11_updated": 87,
   "2026-W12_updated": 87,
   "2026-W13_updated": 87,
   "2026-W14_updated": 0,
   "2026-W15_updated": 87,
   "last_run_result": {
-    "date": "2026-04-28",
+    "date": "2026-04-29",
     "status": "success",
-    "provisional": "W16/W17/W18 未公開（最新公開はW15、既処理）",
+    "provisional": "W16 処理完了 (87疾病更新)。W17/W18 未公開",
     "pdf": "更新不要（最新公開PDFはidwr2026-15.pdf、既保有）",
     "nesid_2025": "確認スキップ（既に未公開記録あり）",
-    "alerts_added": 0,
-    "alerts_deleted": 6,
-    "alerts_total": 6,
+    "alerts_added": 6,
+    "alerts_deleted": 0,
+    "alerts_total": 12,
     "anomalies_high": 1,
     "anomalies_medium": 4,
-    "top_signal": "麻しん W15: 56件 (×73.8)",
-    "commentary_chars": 316,
-    "note": "速報・週報とも新データなし。古いALERTS6件を削除、異常検知とAI解説を更新"
-  }
+    "top_signal": "麻しん W15: 56件 (×73.8) / W16速報: 57件",
+    "commentary_chars": 366,
+    "note": "W16速報を新規追加。col_idx補正を実施。異常検知とAI解説を更新"
+  },
+  "2026-W16_updated": 87
 }
