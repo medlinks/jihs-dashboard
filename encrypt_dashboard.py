@@ -28,15 +28,41 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     margin: 0; min-height: 100vh;
     display: flex; align-items: center; justify-content: center;
+    padding: 20px;
   }
   .login-box {
-    background: white; padding: 40px 36px;
+    background: white; padding: 40px 36px 32px;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    width: 320px; text-align: center;
+    width: 100%; max-width: 540px;
+    box-sizing: border-box;
   }
-  h1 { font-size: 18px; color: #333; margin: 0 0 8px; }
-  p.sub { color: #666; font-size: 13px; margin: 0 0 24px; }
+  .lock { font-size: 28px; margin-bottom: 12px; text-align: center; }
+  h1 { font-size: 18px; color: #333; margin: 0 0 8px; text-align: center; }
+  p.sub { color: #666; font-size: 13px; margin: 0 0 20px; text-align: center; }
+  .disclaimer {
+    background: #fff8e1;
+    border: 1px solid #ffd54f;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 0 0 24px;
+    font-size: 11.5px;
+    line-height: 1.7;
+    color: #5d4037;
+    text-align: left;
+  }
+  .disclaimer h3 {
+    font-size: 12px; margin: 0 0 6px;
+    color: #c62828; font-weight: 700;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .disclaimer p { margin: 0 0 8px; }
+  .disclaimer p:last-child { margin: 0; }
+  .disclaimer a { color: #1565c0; text-decoration: none; }
+  .disclaimer a:hover { text-decoration: underline; }
+  .disclaimer .src-list { margin: 4px 0 8px 16px; padding: 0; font-size: 11px; }
+  .disclaimer .src-list li { margin-bottom: 2px; }
+  .input-row { max-width: 320px; margin: 0 auto; }
   input[type=password] {
     width: 100%; padding: 12px 14px; box-sizing: border-box;
     border: 1.5px solid #d0d7de; border-radius: 8px;
@@ -52,18 +78,56 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   }
   button:hover { background: #0552b1; }
   button:disabled { background: #94a3b8; cursor: not-allowed; }
-  .err { color: #cf222e; font-size: 13px; margin-top: 12px; min-height: 18px; }
-  .lock { font-size: 28px; margin-bottom: 12px; }
+  .err { color: #cf222e; font-size: 13px; margin-top: 12px; min-height: 18px; text-align: center; }
+  .footer-note {
+    margin-top: 18px; padding-top: 14px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 10.5px; color: #888;
+    text-align: center; line-height: 1.5;
+  }
 </style>
 </head>
 <body>
 <div class="login-box" id="login">
   <div class="lock">🔒</div>
-  <h1>JIHS 感染症ダッシュボード</h1>
-  <p class="sub">アクセスにはパスワードが必要です</p>
-  <input type="password" id="pw" placeholder="パスワードを入力" autofocus>
-  <button id="btn">ログイン</button>
-  <div class="err" id="err"></div>
+  <h1>JIHS 感染症サーベイランスダッシュボード</h1>
+  <p class="sub">非公式・内部利用専用 / Internal Research Use Only</p>
+
+  <div class="disclaimer">
+    <h3>⚠️ 免責事項・利用上の注意</h3>
+    <p>
+      本サイトは <strong>個人の研究・教育目的</strong> で作成された <strong>非公式の可視化ダッシュボード</strong> です。
+      国立健康危機管理研究機構（JIHS）・厚生労働省・その他関係機関による公認・推奨を受けたものではありません。
+    </p>
+    <p>
+      <strong>データソース（一次情報源）：</strong>
+    </p>
+    <ul class="src-list">
+      <li><a href="https://id-info.jihs.go.jp/" target="_blank" rel="noopener">JIHS 感染症発生動向調査（IDWR）</a></li>
+      <li><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/sagasu_ruikei.html" target="_blank" rel="noopener">厚生労働省 感染症法における感染症の分類</a></li>
+    </ul>
+    <p>
+      掲載データの正確性は最大限努めていますが、最終的な臨床判断・公衆衛生対応の際は
+      必ず <strong>一次情報源（JIHS公式サイト）</strong> をご確認ください。
+      本サイト利用に伴ういかなる損害についても作成者は責任を負いません。
+    </p>
+    <p>
+      <strong>引用・転載：</strong>本ダッシュボードの内容を外部発表・出版等で引用される場合、
+      JIHSサイトの<a href="https://www.jihs.go.jp/terms_of_use/" target="_blank" rel="noopener">利用規約</a>に従い、
+      事前に作成者および JIHS 広報管理部にご連絡ください。
+    </p>
+  </div>
+
+  <div class="input-row">
+    <input type="password" id="pw" placeholder="パスワードを入力" autofocus>
+    <button id="btn">同意してログイン</button>
+    <div class="err" id="err"></div>
+  </div>
+
+  <div class="footer-note">
+    パスワード入力＝上記の免責事項に同意したものとみなします<br>
+    By entering the password, you acknowledge the above disclaimer.
+  </div>
 </div>
 <script>
 const ENC_PAYLOAD = __PAYLOAD__;
