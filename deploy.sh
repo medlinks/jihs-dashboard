@@ -22,11 +22,20 @@ if pgrep -x git > /dev/null 2>&1; then
   exit 1
 fi
 # ロックファイル類を一括削除（不在ならスキップ）
-STALE=(.git/index.lock .git/index.lock.bak .git/index.lock.bak2 .git/index.lock.stale .git/__test__)
+STALE=(.git/index.lock .git/HEAD.lock .git/refs/remotes/origin/main.lock .git/index.lock.bak .git/index.lock.bak2 .git/index.lock.stale .git/__test__)
 for f in "${STALE[@]}"; do
   if [ -e "$f" ]; then
-    rm -f "$f" 2>/dev/null && echo "🧹 stale ファイル削除: $f" || true
+    # サンドボックスで unlink 不可でも rename は可能なので、退避するだけで OK
+    if rm -f "$f" 2>/dev/null; then
+      echo "🧹 stale ファイル削除: $f"
+    else
+      mv "$f" "${f}.stale.$(date +%s%N)" 2>/dev/null && echo "🧹 stale ファイル退避: $f" || true
+    fi
   fi
+done
+# tmp_obj_* と stale.* 系も同様
+find .git -maxdepth 4 -name "*.lock.stale.*" -mmin +60 2>/dev/null | head -20 | while read f; do
+  rm -f "$f" 2>/dev/null || true
 done
 # テンポラリオブジェクト（サンドボックスがunlink失敗で残したもの）を掃除
 TMP_OBJS=$(find .git/objects -name "tmp_obj_*" 2>/dev/null)
