@@ -49,3 +49,11 @@ PMID_*.xlsx
 # OS
 .DS_Store
 Thumbs.db
+
+# Password-protected: dashboard.html is encrypted into index.html before push
+dashboard.html
+dashboard.html.bak*
+dashboard_encrypted*.html
+dashboard_encrypted_test.html
+commentary.txt
+.alerts_run_summary.json

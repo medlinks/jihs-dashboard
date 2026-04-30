@@ -25,14 +25,14 @@ fi
 STALE=(.git/index.lock .git/index.lock.bak .git/index.lock.bak2 .git/index.lock.stale .git/__test__)
 for f in "${STALE[@]}"; do
   if [ -e "$f" ]; then
-    rm -f "$f" && echo "🧹 stale ファイル削除: $f"
+    rm -f "$f" 2>/dev/null && echo "🧹 stale ファイル削除: $f" || true
   fi
 done
 # テンポラリオブジェクト（サンドボックスがunlink失敗で残したもの）を掃除
 TMP_OBJS=$(find .git/objects -name "tmp_obj_*" 2>/dev/null)
 if [ -n "$TMP_OBJS" ]; then
   echo "🧹 stale tmp_obj_* を削除します"
-  echo "$TMP_OBJS" | xargs rm -f
+  echo "$TMP_OBJS" | xargs rm -f 2>/dev/null || true
 fi
 
 # リモートが設定されているか
@@ -42,14 +42,25 @@ if ! git remote get-url origin > /dev/null 2>&1; then
   exit 1
 fi
 
+# ── パスワード付き暗号化（index.html を暗号化版として生成） ──
+# 環境変数 JIHS_PW があれば使用、無ければ既定値（要本番では変更）
+DASHBOARD_PW="${JIHS_PW:-197023}"
+if [ -f dashboard.html ] && [ -f encrypt_dashboard.py ]; then
+  echo "🔒 dashboard.html を暗号化して index.html に出力中..."
+  python3 encrypt_dashboard.py "$DASHBOARD_PW" dashboard.html index.html
+fi
+
 # 変更があるかチェック
 if git diff --quiet && git diff --cached --quiet; then
   echo "✓ 変更なし。push スキップ。"
   exit 0
 fi
 
-git add dashboard.html scripts/anomalies.json scripts/full_dashboard_data.json README.md 2>/dev/null || true
+# dashboard.html は git に含めない（パスワード保護のため）。index.html だけ push する。
+git add index.html scripts/anomalies.json scripts/full_dashboard_data.json README.md 2>/dev/null || true
 git add -u
+# dashboard.html が誤って add されていたら除外
+git rm --cached -f dashboard.html 2>/dev/null || true
 git commit -m "$MSG"
 git push origin main
 
