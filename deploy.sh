@@ -53,24 +53,39 @@ fi
 
 # ── パスワード付き暗号化（index.html を暗号化版として生成） ──
 # 環境変数 JIHS_PW があれば使用、無ければ既定値（要本番では変更）
-DASHBOARD_PW="${JIHS_PW:-197023}"
+DASHBOARD_PW="${JIHS_PW:-juntendo}"
 if [ -f dashboard.html ] && [ -f encrypt_dashboard.py ]; then
   echo "🔒 dashboard.html を暗号化して index.html に出力中..."
   python3 encrypt_dashboard.py "$DASHBOARD_PW" dashboard.html index.html
 fi
 
+# lock を再退避（git コマンドが生成した可能性があるもの）
+cleanup_locks() {
+  for lock_f in .git/index.lock .git/HEAD.lock .git/refs/remotes/origin/main.lock; do
+    if [ -f "$lock_f" ]; then
+      rm -f "$lock_f" 2>/dev/null || mv "$lock_f" "${lock_f}.stale.$(date +%s%N)" 2>/dev/null || true
+    fi
+  done
+}
+
 # 変更があるかチェック
-if git diff --quiet && git diff --cached --quiet; then
+cleanup_locks
+if git diff --quiet 2>/dev/null && git diff --cached --quiet 2>/dev/null; then
   echo "✓ 変更なし。push スキップ。"
   exit 0
 fi
 
 # dashboard.html は git に含めない（パスワード保護のため）。index.html だけ push する。
+cleanup_locks
 git add index.html scripts/anomalies.json scripts/full_dashboard_data.json README.md 2>/dev/null || true
+cleanup_locks
 git add -u
+cleanup_locks
 # dashboard.html が誤って add されていたら除外
 git rm --cached -f dashboard.html 2>/dev/null || true
+cleanup_locks
 git commit -m "$MSG"
+cleanup_locks
 git push origin main
 
 echo ""
