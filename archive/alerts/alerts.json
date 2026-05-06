@@ -1,0 +1,222 @@
+[
+  {
+    "id": "2026414-001",
+    "status": "judged",
+    "update_date": "2026年4月14日",
+    "pub_date": "2024年4月25日",
+    "is_new_article": false,
+    "title": "「小児感染症診療ネットワークで探知したマクロライド耐性マイコプラズマ重症肺炎の症例集積」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/surveillance/iasr/pathogens/vol45/530/530d04.html",
+    "keyword_screen": {
+      "matched_keywords": ["集積", "耐性", "マクロライド耐性", "重症", "新興"],
+      "alert_types": ["集積発生", "薬剤耐性", "重症化", "新規病原体"],
+      "score": 13
+    },
+    "ai_judgment": {
+      "is_alert": false,
+      "severity": null,
+      "alert_type": null,
+      "one_liner": null,
+      "reasoning": "2024年4月公開の過去記事の更新（サイト移行に伴う可能性）。事例は2023年12月〜2024年1月に東京都立小児総合医療センターで確認された3例の集積であり、現在進行中の事態ではない。マクロライド耐性マイコプラズマ重症肺炎として重要な知見だが、過去事例の報告にとどまる。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "2026414-002",
+    "status": "judged",
+    "update_date": "2026年4月14日",
+    "pub_date": "2024年4月25日",
+    "is_new_article": false,
+    "title": "「富山県で初めて確認され, 極東紅斑熱と推定された紅斑熱群リケッチア症の1例」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/surveillance/iasr/pathogens/vol45/530/530d01.html",
+    "keyword_screen": {
+      "matched_keywords": ["初めて確認", "重症", "死亡"],
+      "alert_types": ["地理的拡大", "重症化"],
+      "score": 5
+    },
+    "ai_judgment": {
+      "is_alert": false,
+      "severity": null,
+      "alert_type": null,
+      "one_liner": null,
+      "reasoning": "2024年4月公開の過去記事の更新。富山県初確認例は2022年以前の事例（「2022年まで富山県では確認されていなかった」）であり、歴史的な症例報告。現在進行中の感染拡大ではない。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "2026410-003",
+    "status": "judged",
+    "update_date": "2026年4月10日",
+    "pub_date": null,
+    "is_new_article": true,
+    "title": "「麻疹の発生に関するリスクアセスメント 」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/risk-assessment/measles/index.html",
+    "keyword_screen": {
+      "matched_keywords": ["リスク評価", "リスクアセスメント"],
+      "alert_types": ["リスク評価"],
+      "score": 4
+    },
+    "ai_judgment": {
+      "is_alert": true,
+      "severity": "🟡",
+      "alert_type": "リスク評価",
+      "one_liner": "JIHS、麻疹リスクアセスメント2026年第一版を公開（2026年3月19日時点）",
+      "reasoning": "JIHSが2026年版の麻疹リスクアセスメントを新規掲載（2026年4月10日）。毎年更新される定期的な評価だが、2026年版の発行は国内の麻疹リスクを継続監視中であることを示す。医療従事者が現状リスクを確認すべき重要情報。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "202647-004",
+    "status": "judged",
+    "update_date": "2026年4月7日",
+    "pub_date": null,
+    "is_new_article": true,
+    "title": "「高病原性鳥インフルエンザウイルスA（H5N1）感染事例に関するリスクアセスメントと対応」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/risk-assessment/avian-influenza-a-h5n1/20230413/index.html",
+    "keyword_screen": {
+      "matched_keywords": ["拡大", "リスク評価", "リスクアセスメント"],
+      "alert_types": ["地理的拡大", "リスク評価", "感染拡大"],
+      "score": 5
+    },
+    "ai_judgment": {
+      "is_alert": true,
+      "severity": "🔴",
+      "alert_type": "リスク評価・感染拡大",
+      "one_liner": "JIHSがH5N1鳥インフルエンザのリスクアセスメントを2026年4月6日に最終更新",
+      "reasoning": "2026年4月6日に最終更新された現在進行中のリスクアセスメント。H5N1は世界的に家禽・野鳥への感染が拡大しており、パンデミックポテンシャルを有する病原体として最重要監視対象。定期的に更新されるリスクアセスメントの最新版は、状況変化への対応として高い注意を要する。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "2026330-005",
+    "status": "judged",
+    "update_date": "2026年3月30日",
+    "pub_date": null,
+    "is_new_article": true,
+    "title": "「カンジダ・アウリス」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/infectious-diseases/candida-auris/index.html",
+    "keyword_screen": {
+      "matched_keywords": ["耐性", "死亡", "重篤", "新興"],
+      "alert_types": ["地理的拡大", "薬剤耐性", "重症化", "新規病原体"],
+      "score": 4
+    },
+    "ai_judgment": {
+      "is_alert": true,
+      "severity": "🟡",
+      "alert_type": "薬剤耐性・新規病原体",
+      "one_liner": "カンジダ・アウリス：18都道府県34例報告（〜2025年1月）、多剤耐性emerging pathogenとして国内監視継続",
+      "reasoning": "2026年3月30日更新の現在の疾患情報。事務連絡発出（2023年5月）以降、2025年1月までに18都道府県から34例報告があり国内に着実に広がっている。多剤耐性かつ院内感染リスクが高いemerging pathogenであり、医療機関への注意喚起として重要。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "2026327-006",
+    "status": "judged",
+    "update_date": "2026年3月27日",
+    "pub_date": "2026年3月27日",
+    "is_new_article": true,
+    "title": "「IASR Vol.47, No.3(No.553) March 2026 A型肝炎　2019～2025年」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/surveillance/iasr/pathogens/vol47/553/index.html",
+    "keyword_screen": {
+      "matched_keywords": ["アウトブレイク", "耐性"],
+      "alert_types": ["集積発生", "薬剤耐性"],
+      "score": 2
+    },
+    "ai_judgment": {
+      "is_alert": true,
+      "severity": "🔵",
+      "alert_type": "定期情報",
+      "one_liner": "IASR Vol.47 March 2026：A型肝炎2019-2025年疫学・CRE病原体サーベイランス2023年・チェコHAV流行2025年を収録",
+      "reasoning": "IASR月報（2026年3月号）の掲載通知。現在の緊急アラートではないが、A型肝炎の国内外疫学動向、CRE（カルバペネム耐性腸内細菌）のサーベイランスデータ2023年、チェコ2025年HAV流行など医療従事者に有用な疫学情報を含む定期刊行物として情報提供価値がある。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "2026323-007",
+    "status": "judged",
+    "update_date": "2026年3月23日",
+    "pub_date": null,
+    "is_new_article": true,
+    "title": "「感染性胃腸炎」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/infectious-diseases/infectious-diarrhea/index.html",
+    "keyword_screen": {
+      "matched_keywords": ["重症"],
+      "alert_types": ["重症化"],
+      "score": 1
+    },
+    "ai_judgment": {
+      "is_alert": false,
+      "severity": null,
+      "alert_type": null,
+      "one_liner": null,
+      "reasoning": "感染性胃腸炎の一般疾患情報ページの定期更新。「重症」キーワードは乳幼児・高齢者の脱水による一般的な重症化リスクの記述によるもの。異常な集積・拡大・新規事例は認められない。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "2026323-008",
+    "status": "judged",
+    "update_date": "2026年3月23日",
+    "pub_date": null,
+    "is_new_article": true,
+    "title": "「突発性発しん」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/infectious-diseases/roseola/index.html",
+    "keyword_screen": {
+      "matched_keywords": ["重篤"],
+      "alert_types": ["重症化"],
+      "score": 1
+    },
+    "ai_judgment": {
+      "is_alert": false,
+      "severity": null,
+      "alert_type": null,
+      "one_liner": null,
+      "reasoning": "突発性発しん（HHV-6/7）の一般疾患情報ページの定期更新。「重篤」キーワードは稀な合併症（脳炎等）の疾患説明文によるもの。異常シグナルなし。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "2026323-009",
+    "status": "judged",
+    "update_date": "2026年3月23日",
+    "pub_date": null,
+    "is_new_article": true,
+    "title": "「チクングニア熱リスク評価」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/risk-assessment/chikungunya-fever/index.html",
+    "keyword_screen": {
+      "matched_keywords": ["リスク評価"],
+      "alert_types": ["リスク評価"],
+      "score": 3
+    },
+    "ai_judgment": {
+      "is_alert": true,
+      "severity": "🔵",
+      "alert_type": "リスク評価",
+      "one_liner": "JIHSがチクングニア熱リスク評価を2026年3月23日に更新",
+      "reasoning": "リスク評価ページの更新。本文が短く詳細不明だが、JIHSがチクングニア熱の国際的発生動向を能動的に追跡・評価している。渡航者感染リスクの観点から医療従事者向けに参照情報として提供する。緊急性は低いが、継続監視事項として情報提供価値あり。",
+      "judged_at": "2026-04-15"
+    }
+  },
+  {
+    "id": "2026323-010",
+    "status": "judged",
+    "update_date": "2026年3月23日",
+    "pub_date": null,
+    "is_new_article": true,
+    "title": "「細菌性髄膜炎（髄膜炎菌、肺炎球菌、インフルエンザ菌を原因として同定された場合を除く。）」の記事を更新しました",
+    "url": "https://id-info.jihs.go.jp/infectious-diseases/bacterial-meningitis/index.html",
+    "keyword_screen": {
+      "matched_keywords": ["重症"],
+      "alert_types": ["重症化"],
+      "score": 1
+    },
+    "ai_judgment": {
+      "is_alert": false,
+      "severity": null,
+      "alert_type": null,
+      "one_liner": null,
+      "reasoning": "細菌性髄膜炎の一般疾患情報ページの定期更新。「重症」キーワードは意識障害・痙攣等の一般的な重症症状の説明によるもの。記事本文では「報告数は減少傾向」と明記。異常シグナルなし。",
+      "judged_at": "2026-04-15"
+    }
+  }
+]

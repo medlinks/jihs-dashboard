@@ -1,0 +1,263 @@
+[
+  {
+    "disease": "レプトスピラ症",
+    "year": "2024",
+    "total_cases": 53,
+    "rate_high_urban": 0.022473488306763118,
+    "rate_mixed": 0.0853616334063906,
+    "rate_rural": 0.0,
+    "urban_rural_ratio": Infinity
+  },
+  {
+    "disease": "デング熱",
+    "year": "2024",
+    "total_cases": 230,
+    "rate_high_urban": 0.2500175574127397,
+    "rate_mixed": 0.10612527396470181,
+    "rate_rural": 0.06477383137212567,
+    "urban_rural_ratio": 3.859854390523679
+  },
+  {
+    "disease": "後天性免疫不全症候群",
+    "year": "2022",
+    "total_cases": 893,
+    "rate_high_urban": 0.9221110457131646,
+    "rate_mixed": 0.4806057445988529,
+    "rate_rural": 0.24269283528542787,
+    "urban_rural_ratio": 3.7994984261842006
+  },
+  {
+    "disease": "後天性免疫不全症候群（ＨＩＶ感染症を含む）",
+    "year": "2024",
+    "total_cases": 1006,
+    "rate_high_urban": 1.0042840087084768,
+    "rate_mixed": 0.6021455761910255,
+    "rate_rural": 0.32386915686062834,
+    "urban_rural_ratio": 3.10089425755554
+  },
+  {
+    "disease": "侵襲性髄膜炎菌感染症",
+    "year": "2024",
+    "total_cases": 66,
+    "rate_high_urban": 0.056183720766907794,
+    "rate_mixed": 0.055369708155496605,
+    "rate_rural": 0.021591277124041887,
+    "urban_rural_ratio": 2.6021490273193346
+  },
+  {
+    "disease": "Ｅ型肝炎",
+    "year": "2024",
+    "total_cases": 527,
+    "rate_high_urban": 0.5576234286115598,
+    "rate_mixed": 0.2537778290460261,
+    "rate_rural": 0.21591277124041888,
+    "urban_rural_ratio": 2.582632909614439
+  },
+  {
+    "disease": "梅毒",
+    "year": "2024",
+    "total_cases": 14829,
+    "rate_high_urban": 14.425170306903574,
+    "rate_mixed": 9.149844272695812,
+    "rate_rural": 6.40181366727842,
+    "urban_rural_ratio": 2.2532943094915314
+  },
+  {
+    "disease": "ウイルス性肝炎",
+    "year": "2024",
+    "total_cases": 228,
+    "rate_high_urban": 0.20507058079921345,
+    "rate_mixed": 0.1661091244664898,
+    "rate_rural": 0.10795638562020944,
+    "urban_rural_ratio": 1.899568789943114
+  },
+  {
+    "disease": "アメーバ赤痢",
+    "year": "2024",
+    "total_cases": 523,
+    "rate_high_urban": 0.4958213357679612,
+    "rate_mixed": 0.32991117775983386,
+    "rate_rural": 0.29148224117456545,
+    "urban_rural_ratio": 1.701034456747639
+  },
+  {
+    "disease": "侵襲性肺炎球菌感染症",
+    "year": "2024",
+    "total_cases": 2553,
+    "rate_high_urban": 2.226279935388721,
+    "rate_mixed": 1.882570077286884,
+    "rate_rural": 1.6409370614271834,
+    "urban_rural_ratio": 1.3567125685201133
+  },
+  {
+    "disease": "結核",
+    "year": "2024",
+    "total_cases": 16240,
+    "rate_high_urban": 14.210267574970151,
+    "rate_mixed": 11.70607913254124,
+    "rate_rural": 11.32462485155997,
+    "urban_rural_ratio": 1.254811330285496
+  },
+  {
+    "disease": "侵襲性インフルエンザ菌感染症",
+    "year": "2024",
+    "total_cases": 651,
+    "rate_high_urban": 0.5407683123814875,
+    "rate_mixed": 0.5075556580920522,
+    "rate_rural": 0.4965993738529634,
+    "urban_rural_ratio": 1.088942799476026
+  },
+  {
+    "disease": "カルバペネム耐性腸内細菌科細菌感染症",
+    "year": "2022",
+    "total_cases": 2015,
+    "rate_high_urban": 1.6200005605538272,
+    "rate_mixed": 1.616376867448029,
+    "rate_rural": 1.5405719109422813,
+    "urban_rural_ratio": 1.0515578981074398
+  },
+  {
+    "disease": "バンコマイシン耐性腸球菌感染症",
+    "year": "2024",
+    "total_cases": 124,
+    "rate_high_urban": 0.06320668586277126,
+    "rate_mixed": 0.16841619563963547,
+    "rate_rural": 0.06477383137212567,
+    "urban_rural_ratio": 0.9758058852447501
+  },
+  {
+    "disease": "カルバペネム耐性腸内細菌目細菌感染症",
+    "year": "2024",
+    "total_cases": 2293,
+    "rate_high_urban": 1.9102465060748648,
+    "rate_mixed": 1.7303033798592686,
+    "rate_rural": 1.9756018568498328,
+    "urban_rural_ratio": 0.9669187642498072
+  },
+  {
+    "disease": "細菌性赤痢",
+    "year": "2024",
+    "total_cases": 74,
+    "rate_high_urban": 0.0814663951120163,
+    "rate_mixed": 0.018456569385165534,
+    "rate_rural": 0.08636510849616755,
+    "urban_rural_ratio": 0.9432790224032587
+  },
+  {
+    "disease": "急性脳炎",
+    "year": "2024",
+    "total_cases": 633,
+    "rate_high_urban": 0.49722592878713395,
+    "rate_mixed": 0.5260122274772177,
+    "rate_rural": 0.5505775666630681,
+    "urban_rural_ratio": 0.9030987800696514
+  },
+  {
+    "disease": "レジオネラ症",
+    "year": "2024",
+    "total_cases": 2428,
+    "rate_high_urban": 1.7290540066015874,
+    "rate_mixed": 2.3462913830891683,
+    "rate_rural": 1.9432149411637698,
+    "urban_rural_ratio": 0.8897904035083614
+  },
+  {
+    "disease": "劇症型溶血性レンサ球菌感染症",
+    "year": "2024",
+    "total_cases": 1893,
+    "rate_high_urban": 1.49589156541892,
+    "rate_mixed": 1.5342023301418848,
+    "rate_rural": 1.7596890856094136,
+    "urban_rural_ratio": 0.8500885626058563
+  },
+  {
+    "disease": "腸管出血性大腸菌感染症",
+    "year": "2024",
+    "total_cases": 3748,
+    "rate_high_urban": 2.77828499192359,
+    "rate_mixed": 3.296804706425193,
+    "rate_rural": 3.681312749649142,
+    "urban_rural_ratio": 0.7546995272782467
+  },
+  {
+    "disease": "水痘（入院例）",
+    "year": "2024",
+    "total_cases": 486,
+    "rate_high_urban": 0.38907226631083647,
+    "rate_mixed": 0.3714384588764563,
+    "rate_rural": 0.5181906509770053,
+    "urban_rural_ratio": 0.7508284172577662
+  },
+  {
+    "disease": "Ａ型肝炎",
+    "year": "2024",
+    "total_cases": 137,
+    "rate_high_urban": 0.09691691832291593,
+    "rate_mixed": 0.12919598569615873,
+    "rate_rural": 0.12954766274425134,
+    "urban_rural_ratio": 0.7481178453543085
+  },
+  {
+    "disease": "播種性クリプトコックス症",
+    "year": "2024",
+    "total_cases": 190,
+    "rate_high_urban": 0.13062715078306059,
+    "rate_mixed": 0.1707232668127812,
+    "rate_rural": 0.2482996869264817,
+    "urban_rural_ratio": 0.5260866511754305
+  },
+  {
+    "disease": "クロイツフェルト・ヤコブ病",
+    "year": "2024",
+    "total_cases": 174,
+    "rate_high_urban": 0.10534447643795211,
+    "rate_mixed": 0.18225862267850965,
+    "rate_rural": 0.21591277124041888,
+    "urban_rural_ratio": 0.48790294262237516
+  },
+  {
+    "disease": "つつが虫病",
+    "year": "2024",
+    "total_cases": 354,
+    "rate_high_urban": 0.1278179647447152,
+    "rate_mixed": 0.5490829392086746,
+    "rate_rural": 0.2698909640505236,
+    "urban_rural_ratio": 0.4735911229721188
+  },
+  {
+    "disease": "百日咳",
+    "year": "2024",
+    "total_cases": 4080,
+    "rate_high_urban": 3.1856169674836714,
+    "rate_mixed": 2.729265197831353,
+    "rate_rural": 6.790456655511174,
+    "urban_rural_ratio": 0.4691314780572535
+  },
+  {
+    "disease": "破傷風",
+    "year": "2024",
+    "total_cases": 86,
+    "rate_high_urban": 0.04635156963269892,
+    "rate_mixed": 0.09458991809897335,
+    "rate_rural": 0.12954766274425134,
+    "urban_rural_ratio": 0.3577954912564084
+  },
+  {
+    "disease": "重症熱性血小板減少症候群",
+    "year": "2024",
+    "total_cases": 122,
+    "rate_high_urban": 0.02106889528759042,
+    "rate_mixed": 0.20302226323682085,
+    "rate_rural": 0.20511713267839793,
+    "urban_rural_ratio": 0.10271640897313161
+  },
+  {
+    "disease": "日本紅斑熱",
+    "year": "2024",
+    "total_cases": 523,
+    "rate_high_urban": 0.12500877870636984,
+    "rate_mixed": 0.7244203483677472,
+    "rate_rural": 1.2954766274425134,
+    "urban_rural_ratio": 0.09649635976309197
+  }
+]

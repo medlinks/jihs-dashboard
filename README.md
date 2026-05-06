@@ -32,17 +32,54 @@ GitHub Pages デプロイ後にここに記載:
 
 ## ファイル構成
 
+ルート直下にはダッシュボード本体のみ表示。スキルが参照する必須データフォルダは
+そのまま残し、それ以外は `archive/` 配下にカテゴリ別整理されている。
+
 ```
-dashboard.html              # メインのダッシュボード（自己完結 HTML）
-update_pipeline.py          # 更新パイプラインのオーケストレータ
-collect_idwr.py             # 速報データ収集
-collect_alerts.py           # JIHS ニュース収集
-scripts/
-  ├── extract_jihs_fixed.py     # 週報PDF → JSON 抽出
-  ├── extract_all_diseases.py   # 全疾病集計
-  ├── detect_anomalies.py       # 統計的異常検知
-  ├── inject_insights.py        # 異常 + AI 解説の dashboard 注入
-  └── full_dashboard_data.json  # 集計データ
+dashboard.html             # メインのダッシュボード（編集対象、git 非追跡）
+index.html                 # パスワード暗号化済み公開版（GitHub Pages 配信）
+README.md
+
+# === スキル必須（jihs-update / nndss-update が参照、移動不可） ===
+scripts/                   # 抽出・集計・注入スクリプト群 + full_dashboard_data.json
+tests/                     # PDF ヘッダ検査・参考値検証
+us/                        # 米国 NNDSS / CDC AVI データ（raw / processed）
+weekly_extracted/          # JIHS 週報 PDF → Excel
+population/                # 都道府県人口（build_annual_incidence.py 用）
+2013/ … 2026/              # JIHS 週報 PDF 年別フォルダ
+
+# === archive/（補助ファイル群、用途別） ===
+archive/
+├── skills/                # スキルパッケージ・ドラフト（.skill / SKILL.md）
+├── alerts/                # アラート収集パイプライン（collect_alerts.py 等）
+├── pilot/                 # パイロット研究スクリプト・結果
+├── did_classification/    # DID 都市分類（urban tier / metro 関連）
+├── weekly_processing/     # 週次処理スクリプト（process_w15/w16 等）
+├── research/              # 研究ドキュメント・PMID 一覧・短報
+├── tools/                 # encrypt_dashboard.py / deploy.sh
+├── backups/               # dashboard.html.bak* 等
+├── legacy/                # 旧 NESID / 旧 IDWR ワークスペース等
+└── misc/                  # その他
+```
+
+### 暗号化＆デプロイの呼び出し方
+
+```bash
+# 暗号化のみ:
+python3 archive/tools/encrypt_dashboard.py <パスワード> dashboard.html index.html
+
+# 暗号化 → commit → push を一括:
+./archive/tools/deploy.sh "コミットメッセージ"
+```
+
+### 週次データ更新の呼び出し方（変更なし）
+
+スキルは `--project-root` にプロジェクトルート（このフォルダ）を指定して呼ぶ。
+内部で `scripts/`, `tests/`, `us/`, `weekly_extracted/`, `2013/`–`2026/` を参照する。
+
+```bash
+python3 <skill-dir>/scripts/run_us_pipeline.py --project-root /path/to/this/folder
+python3 <skill-dir>/scripts/run_pipeline.py    --project-root /path/to/this/folder
 ```
 
 ## ライセンス・データ出典

@@ -1,0 +1,533 @@
+{
+  "rows": [
+    {
+      "outbreak": "RSV",
+      "idwr_disease": "RSウイルス感染症",
+      "tier": "c",
+      "detector": "D0",
+      "ref_year": 2024,
+      "ref_week": 13,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 0,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.0
+      }
+    },
+    {
+      "outbreak": "RSV",
+      "idwr_disease": "RSウイルス感染症",
+      "tier": "c",
+      "detector": "D1_MAD",
+      "ref_year": 2024,
+      "ref_week": 13,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 16,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 1.2979719188767551
+      }
+    },
+    {
+      "outbreak": "RSV",
+      "idwr_disease": "RSウイルス感染症",
+      "tier": "c",
+      "detector": "D2_W1_default",
+      "ref_year": 2024,
+      "ref_week": 13,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 15,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 1.216848673946958
+      }
+    },
+    {
+      "outbreak": "RSV",
+      "idwr_disease": "RSウイルス感染症",
+      "tier": "c",
+      "detector": "D2_W2_Z_heavy",
+      "ref_year": 2024,
+      "ref_week": 13,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 15,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 1.216848673946958
+      }
+    },
+    {
+      "outbreak": "RSV",
+      "idwr_disease": "RSウイルス感染症",
+      "tier": "c",
+      "detector": "D2_W3_Spatial",
+      "ref_year": 2024,
+      "ref_week": 13,
+      "sustained_alert_year": 2024,
+      "sustained_alert_week": 15,
+      "sustained_severity": "medium",
+      "sustained_lead_weeks": -2,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 12,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.9734789391575663
+      }
+    },
+    {
+      "outbreak": "RSV",
+      "idwr_disease": "RSウイルス感染症",
+      "tier": "c",
+      "detector": "D2_W4_Persistence",
+      "ref_year": 2024,
+      "ref_week": 13,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 12,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.9734789391575663
+      }
+    },
+    {
+      "outbreak": "HFMD",
+      "idwr_disease": "手足口病",
+      "tier": "c",
+      "detector": "D0",
+      "ref_year": 2018,
+      "ref_week": 29,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 0,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.0
+      }
+    },
+    {
+      "outbreak": "HFMD",
+      "idwr_disease": "手足口病",
+      "tier": "c",
+      "detector": "D1_MAD",
+      "ref_year": 2018,
+      "ref_week": 29,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 10,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.8112324492979719
+      }
+    },
+    {
+      "outbreak": "HFMD",
+      "idwr_disease": "手足口病",
+      "tier": "c",
+      "detector": "D2_W1_default",
+      "ref_year": 2018,
+      "ref_week": 29,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 8,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.6489859594383776
+      }
+    },
+    {
+      "outbreak": "HFMD",
+      "idwr_disease": "手足口病",
+      "tier": "c",
+      "detector": "D2_W2_Z_heavy",
+      "ref_year": 2018,
+      "ref_week": 29,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 8,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.6489859594383776
+      }
+    },
+    {
+      "outbreak": "HFMD",
+      "idwr_disease": "手足口病",
+      "tier": "c",
+      "detector": "D2_W3_Spatial",
+      "ref_year": 2018,
+      "ref_week": 29,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 9,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.7301092043681747
+      }
+    },
+    {
+      "outbreak": "HFMD",
+      "idwr_disease": "手足口病",
+      "tier": "c",
+      "detector": "D2_W4_Persistence",
+      "ref_year": 2018,
+      "ref_week": 29,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": null,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 9,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.7301092043681747
+      }
+    },
+    {
+      "outbreak": "Influenza",
+      "idwr_disease": "インフルエンザ",
+      "tier": "c",
+      "detector": "D0",
+      "ref_year": 2022,
+      "ref_week": 51,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": -19,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 0,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.0
+      }
+    },
+    {
+      "outbreak": "Influenza",
+      "idwr_disease": "インフルエンザ",
+      "tier": "c",
+      "detector": "D1_MAD",
+      "ref_year": 2022,
+      "ref_week": 51,
+      "sustained_alert_year": 2023,
+      "sustained_alert_week": 18,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": -19,
+      "time_to_sustained_elevation": -19,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 10,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.8112324492979719
+      }
+    },
+    {
+      "outbreak": "Influenza",
+      "idwr_disease": "インフルエンザ",
+      "tier": "c",
+      "detector": "D2_W1_default",
+      "ref_year": 2022,
+      "ref_week": 51,
+      "sustained_alert_year": 2023,
+      "sustained_alert_week": 18,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": -19,
+      "time_to_sustained_elevation": -19,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 11,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.8923556942277692
+      }
+    },
+    {
+      "outbreak": "Influenza",
+      "idwr_disease": "インフルエンザ",
+      "tier": "c",
+      "detector": "D2_W2_Z_heavy",
+      "ref_year": 2022,
+      "ref_week": 51,
+      "sustained_alert_year": 2023,
+      "sustained_alert_week": 18,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": -19,
+      "time_to_sustained_elevation": -19,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 10,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.8112324492979719
+      }
+    },
+    {
+      "outbreak": "Influenza",
+      "idwr_disease": "インフルエンザ",
+      "tier": "c",
+      "detector": "D2_W3_Spatial",
+      "ref_year": 2022,
+      "ref_week": 51,
+      "sustained_alert_year": 2023,
+      "sustained_alert_week": 18,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": -19,
+      "time_to_sustained_elevation": -19,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 12,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.9734789391575663
+      }
+    },
+    {
+      "outbreak": "Influenza",
+      "idwr_disease": "インフルエンザ",
+      "tier": "c",
+      "detector": "D2_W4_Persistence",
+      "ref_year": 2022,
+      "ref_week": 51,
+      "sustained_alert_year": 2023,
+      "sustained_alert_week": 18,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": -19,
+      "time_to_sustained_elevation": -19,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 10,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.8112324492979719
+      }
+    },
+    {
+      "outbreak": "HFMD_W19",
+      "idwr_disease": "手足口病",
+      "tier": "c-sensitivity",
+      "detector": "D0",
+      "ref_year": 2018,
+      "ref_week": 19,
+      "sustained_alert_year": null,
+      "sustained_alert_week": null,
+      "sustained_severity": null,
+      "sustained_lead_weeks": null,
+      "time_to_sustained_elevation": 26,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 0,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.0
+      }
+    },
+    {
+      "outbreak": "HFMD_W19",
+      "idwr_disease": "手足口病",
+      "tier": "c-sensitivity",
+      "detector": "D1_MAD",
+      "ref_year": 2018,
+      "ref_week": 19,
+      "sustained_alert_year": 2017,
+      "sustained_alert_week": 45,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": 26,
+      "time_to_sustained_elevation": 26,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 9,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.7301092043681747
+      }
+    },
+    {
+      "outbreak": "HFMD_W19",
+      "idwr_disease": "手足口病",
+      "tier": "c-sensitivity",
+      "detector": "D2_W1_default",
+      "ref_year": 2018,
+      "ref_week": 19,
+      "sustained_alert_year": 2017,
+      "sustained_alert_week": 45,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": 26,
+      "time_to_sustained_elevation": 26,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 7,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.5678627145085804
+      }
+    },
+    {
+      "outbreak": "HFMD_W19",
+      "idwr_disease": "手足口病",
+      "tier": "c-sensitivity",
+      "detector": "D2_W2_Z_heavy",
+      "ref_year": 2018,
+      "ref_week": 19,
+      "sustained_alert_year": 2017,
+      "sustained_alert_week": 45,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": 26,
+      "time_to_sustained_elevation": 26,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 7,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.5678627145085804
+      }
+    },
+    {
+      "outbreak": "HFMD_W19",
+      "idwr_disease": "手足口病",
+      "tier": "c-sensitivity",
+      "detector": "D2_W3_Spatial",
+      "ref_year": 2018,
+      "ref_week": 19,
+      "sustained_alert_year": 2017,
+      "sustained_alert_week": 45,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": 26,
+      "time_to_sustained_elevation": 26,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 8,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.6489859594383776
+      }
+    },
+    {
+      "outbreak": "HFMD_W19",
+      "idwr_disease": "手足口病",
+      "tier": "c-sensitivity",
+      "detector": "D2_W4_Persistence",
+      "ref_year": 2018,
+      "ref_week": 19,
+      "sustained_alert_year": 2017,
+      "sustained_alert_week": 45,
+      "sustained_severity": "high",
+      "sustained_lead_weeks": 26,
+      "time_to_sustained_elevation": 26,
+      "false_alert": {
+        "sustained_alerts_outside_anchor_window": 8,
+        "eligible_weeks_outside": 641,
+        "rate_per_year": 0.6489859594383776
+      }
+    }
+  ],
+  "pairs": [
+    [
+      "Influenza",
+      -19,
+      -19,
+      "D2_W1_default",
+      0
+    ]
+  ],
+  "avg_delta_d2_vs_d1": 0.0,
+  "decision": "REFINE3 — partial improvement; tune weights / signals",
+  "ground_truth": {
+    "RSV": {
+      "idwr_key": "RSウイルス感染症",
+      "year": 2024,
+      "week": 13,
+      "tier": "c",
+      "source_url": "https://id-info.jihs.go.jp/surveillance/idwr/featured/2024/15/index.html",
+      "source_url_status": "HTTP 200 verified 2026-05-06",
+      "source_type": "JIHS featured (注目すべき感染症)",
+      "source_excerpt_jp": "第13週以降、過去5年間の同時期と比べて定点当たり報告数は最も多くなっている",
+      "justification": "JIHS featured article 2024/15 (published end of W15, late Apr 2024) explicitly cites W13 as the first week where 2024 RSV per-sentinel exceeded all past-5y same-week values, marking JIHS-editorial-recognized inflection.",
+      "caveat": "JIHS publication trigger is independent of raw weekly count alone (editorial decision based on threshold-crossing on per-sentinel rate); however the threshold itself is sentinel-derived."
+    },
+    "HFMD": {
+      "idwr_key": "手足口病",
+      "year": 2018,
+      "week": 29,
+      "tier": "c",
+      "source_url": "https://id-info.jihs.go.jp/niid/ja/hfmd-m/hfmd-idwrc/8222-idwrc-1829.html",
+      "source_url_status": "HTTP 200 verified 2026-05-06 — full Japanese article body retrieved",
+      "source_type": "JIHS/NIID featured (注目すべき感染症, IDWR 2018年第29号)",
+      "source_excerpt_jp": "2018年は、第19週以降第28週にかけて定点当たり報告数は継続して増加した",
+      "justification": "JIHS featured article published in IDWR W29 (mid-Jul 2018) flagged HFMD as 注目すべき感染症 because of sustained W19–W28 rise. W29 is the JIHS-editorial-recognized week the outbreak was officially elevated to alert status.",
+      "caveat": "The same article retrospectively cites W19 as the inflection per their own analysis. We anchor at W29 (publication week) as the policy-relevant outbreak-recognition moment; W19 is reported as a sensitivity check."
+    },
+    "Influenza": {
+      "idwr_key": "インフルエンザ",
+      "year": 2022,
+      "week": 51,
+      "tier": "c",
+      "source_url": "https://id-info.jihs.go.jp/surveillance/idwr/featured/2023/03/index.html",
+      "source_url_status": "HTTP 200 verified 2026-05-06 (per agent fetch)",
+      "source_type": "JIHS featured 2022/23 season review",
+      "source_excerpt_jp": "第51週（12月19～25日）には1.24...と1.00を上回ったため、全国的にインフルエンザは流行期に入ったと判断された",
+      "justification": "Official 流行期入り (epidemic-phase entry) declaration: per-sentinel rate first exceeded the 1.00 national-warning threshold in W51 of 2022. This is the formal MHLW/JIHS regulatory criterion, independent of any single-week count.",
+      "caveat": "First post-COVID full season; baseline may include suppressed 2020-21/21-22 seasons which could bias historic-limits methods."
+    },
+    "HFMD_W19": {
+      "idwr_key": "手足口病",
+      "year": 2018,
+      "week": 19,
+      "tier": "c-sensitivity",
+      "source_url": "https://id-info.jihs.go.jp/niid/ja/hfmd-m/hfmd-idwrc/8222-idwrc-1829.html",
+      "source_url_status": "HTTP 200 verified 2026-05-06 — full Japanese article body retrieved",
+      "source_type": "JIHS/NIID featured (注目すべき感染症, IDWR 2018年第29号)",
+      "source_excerpt_jp": "2018年は、第19週以降第28週にかけて定点当たり報告数は継続して増加した",
+      "justification": "W19 is the JIHS-cited retrospective inflection week ('第19週以降継続して増加'). Used as sensitivity check on the HFMD W29 publication-anchor.",
+      "caveat": "The same article retrospectively cites W19 as the inflection per their own analysis. We anchor at W29 (publication week) as the policy-relevant outbreak-recognition moment; W19 is reported as a sensitivity check."
+    }
+  },
+  "params": {
+    "lookback_years": 5,
+    "week_window": 2,
+    "sustained_k": 3,
+    "lead_window_w": 26,
+    "mad_k_med": 2.0,
+    "mad_k_high": 3.0,
+    "comp_med": 0.5,
+    "comp_high": 0.7,
+    "d2_weights": {
+      "W1_default": {
+        "Z": 0.35,
+        "Growth": 0.2,
+        "Persistence": 0.2,
+        "Spatial": 0.25
+      },
+      "W2_Z_heavy": {
+        "Z": 0.5,
+        "Growth": 0.15,
+        "Persistence": 0.15,
+        "Spatial": 0.2
+      },
+      "W3_Spatial": {
+        "Z": 0.25,
+        "Growth": 0.15,
+        "Persistence": 0.2,
+        "Spatial": 0.4
+      },
+      "W4_Persistence": {
+        "Z": 0.25,
+        "Growth": 0.15,
+        "Persistence": 0.4,
+        "Spatial": 0.2
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "processed_weeks": [
+    "2026-W11",
+    "2026-W12",
+    "2026-W13",
+    "2026-W14",
+    "2026-W15",
+    "2026-W16"
+  ],
+  "last_run": "2026-05-06T03:18:26.775700",
+  "2026-W11_updated": 87,
+  "2026-W12_updated": 87,
+  "2026-W13_updated": 87,
+  "2026-W14_updated": 0,
+  "2026-W15_updated": 87,
+  "last_run_result": {
+    "date": "2026-05-06",
+    "status": "ok",
+    "provisional": "新しい速報なし（最終: W16 既処理。次週W17は未公開）",
+    "pdf": "更新不要（W17 PDF未公開、JIHSサイト確認済）",
+    "nesid_2025": "スキップ（4-6月の確認は実施済、404継続）",
+    "alerts_added": 0,
+    "alerts_deleted": 0,
+    "alerts_total": 9,
+    "anomalies_high": 17,
+    "anomalies_medium": 1,
+    "top_signal": "腸管出血性大腸菌感染症 W16: 70件（例年21件、x3.34、z=3.2）／クラミジア肺炎 W16: 8件（x11.04、z=3.24）／麻しん W16: 57件",
+    "commentary_chars": 375,
+    "note": "W17未公開のためデータ更新なし。speed_trends 集計と embed は冪等実行。ニュース・アラートは変化なし（既存9件すべて1週間以内）。"
+  },
+  "2026-W16_updated": 87
+}
