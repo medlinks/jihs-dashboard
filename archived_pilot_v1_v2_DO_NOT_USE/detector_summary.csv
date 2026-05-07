@@ -1,0 +1,11 @@
+detector,disease_class,n_diseases,total_alerts_outside_window,mean_alerts_per_year
+D_rare,sentinel/その他,27,0,0.0
+D_stat,sentinel/その他,27,105,0.301
+D_growth,sentinel/その他,27,43,0.154
+D_spatial,sentinel/その他,27,28,0.08
+combined,sentinel/その他,27,140,0.432
+D_rare,全数把握,81,732,0.715
+D_stat,全数把握,81,131,0.125
+D_growth,全数把握,81,12,0.012
+D_spatial,全数把握,81,32,0.03
+combined,全数把握,81,853,0.831

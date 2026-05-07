@@ -1,0 +1,155 @@
+{
+  "ground_truth": {
+    "梅毒": {
+      "year": 2024,
+      "week": 1,
+      "tier": "silver",
+      "source_url": "https://id-info.jihs.go.jp/ (NIID IASR annual review proxy)",
+      "source_type": "baseline anchor (chronic endemic, no discrete onset)",
+      "justification": "Syphilis is a multi-year rising endemic; no discrete outbreak start. Anchor at 2024 W1 represents the start of the surveillance year; lead time on this anchor measures whether each detector flags the 2024 surge before mid-year.",
+      "caveat": "Lead-time semantics for chronic outbreaks are weaker than for acute. The detector that 'fires earliest in 2024' is not necessarily superior; we report it for completeness but exclude it from the D2-vs-D1 ≥2-week decision rule."
+    },
+    "麻しん": {
+      "year": 2026,
+      "week": 5,
+      "tier": "b",
+      "source_url": "https://id-info.jihs.go.jp/en/surveillance/idwr/featured/2026/06/index.html",
+      "source_type": "JIHS featured bulletin (genotype-based confirmation, week 5 = 15 cases first cluster)",
+      "justification": "Week 5 (Feb 3–9, 2026) is the first week JIHS featured measles in a special bulletin citing genotype B3/D8 imported-case clusters; before W5 the country had only sporadic single cases.",
+      "caveat": "JIHS bulletin is partly IDWR-derived; we accept it because it adds independent genotype confirmation as the trigger for the bulletin (not raw count threshold)."
+    },
+    "風疹": {
+      "year": 2018,
+      "week": 30,
+      "tier": "c",
+      "source_url": "https://www.niid.go.jp/niid/ja/typhi-m/iasr-reference/2538-related-articles/related-articles-465/8463-465r05.html",
+      "source_type": "peer-reviewed retrospective (IASR Vol.40 No.8, May 2019; Sugishita et al.)",
+      "justification": "IASR retrospective analysis defines W30 (Jul 23–29, 2018) as the inflection week in south Kanto: 19 cases, marking start of 2018-19 nationwide outbreak. NIID issued public alert at W33 (Aug 15) but post-hoc epi assigned start to W30.",
+      "caveat": null
+    }
+  },
+  "rows": [
+    {
+      "disease": "梅毒",
+      "detector": "D0",
+      "ref_year": 2024,
+      "ref_week": 1,
+      "alert_year": 2023,
+      "alert_week": 27,
+      "severity": "medium",
+      "lead_weeks": 26,
+      "note": ""
+    },
+    {
+      "disease": "梅毒",
+      "detector": "D1",
+      "ref_year": 2024,
+      "ref_week": 1,
+      "alert_year": 2023,
+      "alert_week": 27,
+      "severity": "medium",
+      "lead_weeks": 26,
+      "note": ""
+    },
+    {
+      "disease": "梅毒",
+      "detector": "D2",
+      "ref_year": 2024,
+      "ref_week": 1,
+      "alert_year": 2023,
+      "alert_week": 27,
+      "severity": "medium",
+      "lead_weeks": 26,
+      "note": ""
+    },
+    {
+      "disease": "麻しん",
+      "detector": "D0",
+      "ref_year": 2026,
+      "ref_week": 5,
+      "alert_year": 2025,
+      "alert_week": 31,
+      "severity": "high",
+      "lead_weeks": 26,
+      "note": ""
+    },
+    {
+      "disease": "麻しん",
+      "detector": "D1",
+      "ref_year": 2026,
+      "ref_week": 5,
+      "alert_year": 2025,
+      "alert_week": 31,
+      "severity": "high",
+      "lead_weeks": 26,
+      "note": ""
+    },
+    {
+      "disease": "麻しん",
+      "detector": "D2",
+      "ref_year": 2026,
+      "ref_week": 5,
+      "alert_year": 2025,
+      "alert_week": 31,
+      "severity": "medium",
+      "lead_weeks": 26,
+      "note": ""
+    },
+    {
+      "disease": "風疹",
+      "detector": "D0",
+      "ref_year": 2018,
+      "ref_week": 30,
+      "alert_year": 2019,
+      "alert_week": 1,
+      "severity": "high",
+      "lead_weeks": -23,
+      "note": ""
+    },
+    {
+      "disease": "風疹",
+      "detector": "D1",
+      "ref_year": 2018,
+      "ref_week": 30,
+      "alert_year": 2018,
+      "alert_week": 4,
+      "severity": "high",
+      "lead_weeks": 26,
+      "note": ""
+    },
+    {
+      "disease": "風疹",
+      "detector": "D2",
+      "ref_year": 2018,
+      "ref_week": 30,
+      "alert_year": 2019,
+      "alert_week": 1,
+      "severity": "medium",
+      "lead_weeks": -23,
+      "note": ""
+    }
+  ],
+  "detector_specs": {
+    "D0": "z-only (log-transformed historic limits, z>=2 medium / z>=3 high)",
+    "D1": "two-layer (1-case rare 全数把握 + z-rule layer-2)",
+    "D2": "4-signal composite (0.35Z + 0.20G + 0.20P + 0.25S; >=0.7 high, >=0.5 medium)"
+  },
+  "params": {
+    "lookback_years": 5,
+    "week_window": 2,
+    "rare_baseline_threshold": 5,
+    "z_med": 2.0,
+    "z_high": 3.0,
+    "d2_weights": {
+      "Z": 0.35,
+      "Growth": 0.2,
+      "Persistence": 0.2,
+      "Spatial": 0.25
+    },
+    "d2_thresholds": {
+      "medium": 0.5,
+      "high": 0.7
+    },
+    "lead_window_weeks": 26
+  }
+}

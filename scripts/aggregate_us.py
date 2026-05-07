@@ -39,6 +39,29 @@ def load_population():
     return pop
 
 
+def load_live_births():
+    """
+    Read us/population/us_live_births.csv → {year: live_births}.
+    Used as the denominator for perinatal / congenital diseases (Congenital
+    Syphilis, Congenital Rubella, Hepatitis B/C perinatal). Using total
+    population for these gives a rate ~100× too low.
+    """
+    births_file = POP_FILE.parent / "us_live_births.csv"
+    births = {}
+    if not births_file.exists():
+        return births
+    with open(births_file, encoding="utf-8") as f:
+        next(f)  # header
+        for line in f:
+            parts = line.strip().split(",")
+            if len(parts) >= 2 and parts[0].isdigit():
+                try:
+                    births[int(parts[0])] = int(parts[1])
+                except ValueError:
+                    pass
+    return births
+
+
 def load_mapping():
     if not MAPPING_FILE.exists():
         return {}
@@ -254,6 +277,9 @@ def main():
     population = load_population()
     print(f"人口データ: {len(population)} 年分")
 
+    live_births = load_live_births()
+    print(f"活産数データ: {len(live_births)} 年分(Congenital Syphilis 等の分母用)")
+
     label_to_jp, label_to_en = load_mapping()
     print(f"マッピング: {len(label_to_jp)} ラベル → 日本疾病")
 
@@ -266,16 +292,49 @@ def main():
     print(f"EN 全件: {len(en_aligned)} 疾病")
 
     # === 年次累積を m3 (cumulative YTD) の最大値から導出 ===
-    # by_label の各 (year, week) における cumulative_ytd の年内最大値を年累計とする
-    # （m1 だけ合計すると、稀少疾病で m1 = "-" の週が多い場合に過小評価される）
+    # 基本: 各年 Y の値 = その年の m3 (cumulative YTD) 最大値
+    #
+    # ただし NNDSS Weekly は provisional で、前年の case count は翌年に
+    # 改訂され続ける(典型的に +30-50%)。CDC は改訂値を「翌年の m4 列
+    # (= cumulative YTD previous year)」で公開している。
+    # 例: 2024 年の Syphilis, Congenital
+    #   - 2024 自身の max m3 = 2,559 (provisional, 我々が以前使っていた)
+    #   - 2025 weekly の max m4 = 3,936 (改訂後、CDC STI Annual の ~3,945 と一致)
+    #
+    # よって最新の年(YEARS[-1])は m3、それ以外の年は次年度の m4 を優先する。
     annual_totals = {}  # {label: {year: max_ytd}}
     for label, rows in by_label.items():
         per_year = {}
+        # m3 (same-year YTD) を集める
+        m3_by_year = {}
         for r in rows:
             y = r["year"]; ytd = r.get("cumulative_ytd", 0) or 0
-            if y not in per_year or ytd > per_year[y]:
-                per_year[y] = ytd
+            if y not in m3_by_year or ytd > m3_by_year[y]:
+                m3_by_year[y] = ytd
+        per_year.update(m3_by_year)
+
+        # m4 (= 翌年から見た前年累計) を改訂値として優先する
+        # rows には m4 が直接入っていないので by_label_with_m4 を別途構築する必要がある
         annual_totals[label] = per_year
+
+    # 翌年の m4 列を別途取得し、改訂値として overwrite する
+    # （by_label には m4 が入っていないため、生 raw を再スキャン）
+    for next_year in YEARS:
+        prev_year = next_year - 1
+        if prev_year not in YEARS:
+            continue
+        rows = load_year(next_year)
+        for r in rows:
+            label = r.get("label")
+            if not label:
+                continue
+            # m4 = previous year cumulative
+            m4 = safe_int(r.get("m4"))
+            if m4 <= 0:
+                continue
+            cur = annual_totals.setdefault(label, {}).get(prev_year, 0)
+            if m4 > cur:
+                annual_totals[label][prev_year] = m4
 
     # === EN 合并版年次累積 ===
     # us_weekly_trends は EN 合併名（disease_mapping の en）でキー、
@@ -314,6 +373,7 @@ def main():
         "us_annual_totals_en": annual_totals_en,# EN 合併名 年累計（米国版年報棒図用）
         "us_annual_totals_jp": annual_totals_jp,# JP 合併名 年累計（国家対比年報用）
         "us_population": population,
+        "us_live_births": live_births,          # 活産数（Congenital Syphilis 等の分母）
         "years_covered": YEARS,
         "national_only": True,
     }

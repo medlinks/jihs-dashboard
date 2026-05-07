@@ -1,0 +1,17 @@
+iso_week,weekly_count_national,D_rare_state,D_stat_state,D_growth_state,D_spatial_state,D_spatial_leader_tier,Combined_state,sustained_alert_active
+2026-W01,1,high,high,silent,silent,high_urban,high,N
+2026-W02,0,silent,silent,silent,silent,high_urban,silent,N
+2026-W03,3,high,high,silent,silent,high_urban,high,N
+2026-W04,5,high,high,silent,high,high_urban,high,N
+2026-W05,14,high,high,silent,high,high_urban,high,Y
+2026-W06,9,high,high,silent,medium,high_urban,high,Y
+2026-W07,7,high,high,silent,silent,mixed,high,Y
+2026-W08,28,high,high,silent,medium,high_urban,high,Y
+2026-W09,16,high,high,silent,medium,high_urban,high,Y
+2026-W10,17,high,high,silent,silent,high_urban,high,Y
+2026-W11,32,high,high,silent,medium,high_urban,high,Y
+2026-W12,13,high,medium,silent,silent,high_urban,high,Y
+2026-W13,30,high,high,silent,medium,high_urban,high,Y
+2026-W14,34,high,high,silent,medium,high_urban,high,Y
+2026-W15,56,high,high,silent,medium,high_urban,high,Y
+2026-W16,57,high,high,silent,medium,high_urban,high,Y

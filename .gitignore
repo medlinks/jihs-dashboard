@@ -57,3 +57,5 @@ dashboard_encrypted*.html
 dashboard_encrypted_test.html
 commentary.txt
 .alerts_run_summary.json
+us/raw/
+scripts/_commentary_tmp.txt

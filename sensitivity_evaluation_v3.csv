@@ -1,0 +1,9 @@
+metric,value
+n_outbreaks,12
+n_detected_combined,11
+sensitivity_pct,91.7
+median_lead_weeks,1
+mean_lead_weeks,-0.73
+lead_distribution,"-15,-10,-1,-1,0,1,2,4,4,4,4"
+detection_window,"[anchor-4w, anchor+52w]"
+detection_tolerance_pm26w,True

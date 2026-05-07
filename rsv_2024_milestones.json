@@ -1,0 +1,46 @@
+{
+  "first_watch": "2024-W10",
+  "first_combined": "2024-W10",
+  "first_sustained": "2024-W17",
+  "data_anchor": "2024-W19",
+  "jihs_official": "2024-W15",
+  "lead_vs_anchor": 2,
+  "lead_vs_jihs": -2,
+  "tier_totals": {
+    "high_urban": 42356,
+    "mixed": 38313,
+    "rural_leaning": 7429
+  },
+  "tier_active": {
+    "high_urban": 10,
+    "mixed": 27,
+    "rural_leaning": 10
+  },
+  "top5_prefs": [
+    [
+      "大阪府",
+      7836,
+      "high_urban"
+    ],
+    [
+      "福岡県",
+      5503,
+      "high_urban"
+    ],
+    [
+      "東京都",
+      5065,
+      "high_urban"
+    ],
+    [
+      "北海道",
+      4528,
+      "high_urban"
+    ],
+    [
+      "兵庫県",
+      4373,
+      "high_urban"
+    ]
+  ]
+}

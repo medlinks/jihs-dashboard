@@ -36,7 +36,7 @@ pref_latest = {}        # disease -> {pref: count}  latest data available
 pref_year   = {}        # disease -> which year the pref data came from
 
 for year in range(2013, 2027):
-    path = f'/sessions/zealous-nifty-brahmagupta/mnt/claude/weekly_extracted/IDWR{year}.xlsx'
+    path = f'/sessions/sharp-zealous-archimedes/mnt/claude/weekly_extracted/IDWR{year}.xlsx'
     try:
         wb = openpyxl.load_workbook(path, read_only=True)
     except Exception as e:
@@ -134,17 +134,17 @@ else:
 print(f'\nExtracted {len(trends)} diseases')
 
 # Load existing speed data
-with open('/sessions/zealous-nifty-brahmagupta/mnt/claude/scripts/full_dashboard_data.json') as f:
+with open('/sessions/sharp-zealous-archimedes/mnt/claude/scripts/full_dashboard_data.json') as f:
     existing = json.load(f)
 
 # Replace weekly data with full set
 existing['weekly_trends'] = dict(trends)
 existing['weekly_pref']   = pref_latest
 
-with open('/sessions/zealous-nifty-brahmagupta/mnt/claude/scripts/full_dashboard_data.json', 'w', encoding='utf-8') as f:
+with open('/sessions/sharp-zealous-archimedes/mnt/claude/scripts/full_dashboard_data.json', 'w', encoding='utf-8') as f:
     json.dump(existing, f, ensure_ascii=False)
 
 print('Saved full_dashboard_data.json')
 import os
-size = os.path.getsize('/sessions/zealous-nifty-brahmagupta/mnt/claude/scripts/full_dashboard_data.json')
+size = os.path.getsize('/sessions/sharp-zealous-archimedes/mnt/claude/scripts/full_dashboard_data.json')
 print(f'File size: {size/1024:.0f} KB')

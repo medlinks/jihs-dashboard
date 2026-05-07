@@ -1,0 +1,1038 @@
+{
+  "coverage": {
+    "手足口病": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 46.0,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "RSウイルス感染症": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 46.9375,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "インフルエンザ": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "マイコプラズマ肺炎": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 45.65384615384615,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.92307692307692,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 46.0,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "ヘルパンギーナ": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 45.875,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "感染性胃腸炎": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "流行性耳下腺炎": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 45.625,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "Ａ群溶血性レンサ球菌咽頭炎": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "咽頭結膜熱": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 46.94230769230769,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "風しん": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 15,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "麻しん": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 44.5625,
+        "min_week": 1,
+        "max_week": 16
+      }
+    },
+    "梅毒": {
+      "2013": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2014": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2015": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2016": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2017": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2018": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2019": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2020": {
+        "weeks_with_data": 53,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 53
+      },
+      "2021": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2022": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2023": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2024": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2025": {
+        "weeks_with_data": 52,
+        "avg_prefs_per_week": 47.0,
+        "min_week": 1,
+        "max_week": 52
+      },
+      "2026": {
+        "weeks_with_data": 16,
+        "avg_prefs_per_week": 46.125,
+        "min_week": 1,
+        "max_week": 16
+      }
+    }
+  },
+  "missing_disease_year": [],
+  "total_rows": 391142
+}

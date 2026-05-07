@@ -35,6 +35,7 @@ def main():
         "us_annual_totals_en": us.get("us_annual_totals_en", {}),  # EN 合併 年累計（米国版年報棒図）
         "us_annual_totals_jp": us.get("us_annual_totals_jp", {}),  # JP 合併 年累計（国家対比年報）
         "us_population": us["us_population"],
+        "us_live_births": us.get("us_live_births", {}),      # 活産数（per-live-births 疾病の分母）
         "us_years_covered": us["years_covered"],
         "disease_mapping": mapping["mapping"],
     }
@@ -57,6 +58,10 @@ def main():
         f"DATA.us_annual_totals_en = {json.dumps(payload['us_annual_totals_en'], ensure_ascii=False, separators=(',', ':'))};\n"
         f"DATA.us_annual_totals_jp = {json.dumps(payload['us_annual_totals_jp'], ensure_ascii=False, separators=(',', ':'))};\n"
         f"DATA.us_population = {json.dumps(payload['us_population'])};\n"
+        f"DATA.us_live_births = {json.dumps(payload['us_live_births'])};\n"
+        # Diseases whose rate should use live births as denominator (per CDC convention).
+        # Match against the disease key (raw NNDSS label or EN-merged name).
+        f"DATA.us_per_live_births_diseases = {json.dumps(['Syphilis, Congenital', 'Rubella, congenital syndrome', 'Hepatitis B, perinatal infection', 'Hepatitis B, perinatal, Confirmed', 'Hepatitis C, perinatal infection', 'Hepatitis C, perinatal, Confirmed', 'Congenital Rubella Syndrome'])};\n"
         f"DATA.us_years_covered = {json.dumps(payload['us_years_covered'])};\n"
         f"DATA.disease_mapping = {json.dumps(payload['disease_mapping'], ensure_ascii=False, separators=(',', ':'))};\n"
         f"{block_end}"
