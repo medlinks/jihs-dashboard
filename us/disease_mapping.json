@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "description": "日本 IDWR ↔ 米国 NNDSS 疾病対応表 v3（national + state 両方のラベル網羅）",
+    "version": "v3",
+    "note": "national データ (2022-2026) と state データ (2026) で NNDSS ラベル名が異なるため両方を含める。"
+  },
+  "mapping": [
+    {"jp": "麻しん", "en": "Measles", "nndss_labels": ["Measles", "Measles, Imported", "Measles, Indigenous"], "category": "VPD"},
+    {"jp": "風しん", "en": "Rubella", "nndss_labels": ["Rubella"], "category": "VPD"},
+    {"jp": "先天性風しん症候群", "en": "Congenital Rubella Syndrome", "nndss_labels": ["Rubella, congenital syndrome", "Rubella, Congenital syndrome"], "category": "VPD"},
+    {"jp": "百日咳", "en": "Pertussis", "nndss_labels": ["Pertussis"], "category": "VPD"},
+    {"jp": "破傷風", "en": "Tetanus", "nndss_labels": ["Tetanus"], "category": "VPD"},
+    {"jp": "急性灰白髄炎", "en": "Poliomyelitis", "nndss_labels": ["Poliomyelitis", "Poliomyelitis, paralytic", "Poliovirus infection, nonparalytic"], "category": "VPD"},
+
+    {"jp": "結核", "en": "Tuberculosis", "nndss_labels": ["Tuberculosis"], "category": "Respiratory"},
+    {"jp": "レジオネラ症", "en": "Legionellosis", "nndss_labels": ["Legionellosis"], "category": "Respiratory"},
+
+    {"jp": "Ａ型肝炎", "en": "Hepatitis A", "nndss_labels": ["Hepatitis A, Confirmed", "Hepatitis A, acute", "Hepatitis, A, acute"], "category": "Hepatitis"},
+    {"jp": "ウイルス性肝炎", "en": "Viral Hepatitis (B+C)", "nndss_labels": ["Hepatitis B, acute", "Hepatitis B, acute, Confirmed", "Hepatitis B, acute, Probable", "Hepatitis C, acute", "Hepatitis C, acute, Confirmed", "Hepatitis C, acute, Probable"], "category": "Hepatitis"},
+
+    {"jp": "コレラ", "en": "Cholera", "nndss_labels": ["Cholera"], "category": "Enteric"},
+    {"jp": "細菌性赤痢", "en": "Shigellosis", "nndss_labels": ["Shigellosis"], "category": "Enteric"},
+    {"jp": "腸チフス", "en": "Typhoid Fever", "nndss_labels": ["Typhoid fever", "Salmonella Paratyphi infection"], "category": "Enteric"},
+    {"jp": "パラチフス", "en": "Paratyphoid", "nndss_labels": ["Paratyphoid fever"], "category": "Enteric"},
+    {"jp": "腸管出血性大腸菌感染症", "en": "STEC", "nndss_labels": ["STEC", "Shiga toxin-producing Escherichia coli (STEC)"], "category": "Enteric"},
+    {"jp": "ジアルジア症", "en": "Giardiasis", "nndss_labels": ["Giardiasis"], "category": "Enteric"},
+    {"jp": "クリプトスポリジウム症", "en": "Cryptosporidiosis", "nndss_labels": ["Cryptosporidiosis"], "category": "Enteric"},
+
+    {"jp": "梅毒", "en": "Syphilis", "nndss_labels": ["Syphilis, Primary and secondary", "Syphilis, primary and secondary", "Syphilis, Congenital", "Syphilis, congenital", "Syphilis, total"], "category": "STI"},
+
+    {"jp": "侵襲性インフルエンザ菌感染症", "en": "Invasive H. influenzae", "nndss_labels": ["Haemophilus influenzae, invasive disease", "Haemophilus influenzae, invasive disease, All ages, all serotypes"], "category": "Invasive"},
+    {"jp": "侵襲性髄膜炎菌感染症", "en": "Invasive Meningococcal", "nndss_labels": ["Meningococcal disease", "Meningococcal disease, All serogroups"], "category": "Invasive"},
+    {"jp": "劇症型溶血性レンサ球菌感染症", "en": "Streptococcal Toxic Shock Syndrome", "nndss_labels": ["Streptococcal toxic shock syndrome", "Streptococcal toxic shock syndrome (STSS)"], "category": "Invasive"},
+
+    {"jp": "デング熱", "en": "Dengue", "nndss_labels": ["Dengue", "Dengue virus infections, Dengue", "Dengue virus infections, Severe dengue", "Dengue virus infections, Dengue-like illness"], "category": "Arbo"},
+    {"jp": "マラリア", "en": "Malaria", "nndss_labels": ["Malaria"], "category": "Vector"},
+    {"jp": "ウエストナイル熱", "en": "West Nile", "nndss_labels": ["West Nile", "Arboviral diseases, West Nile virus disease", "Arboviral diseases, West Nile"], "category": "Arbo"},
+    {"jp": "チクングニア熱", "en": "Chikungunya", "nndss_labels": ["Chikungunya", "Arboviral diseases, Chikungunya virus disease"], "category": "Arbo"},
+    {"jp": "ジカウイルス感染症", "en": "Zika", "nndss_labels": ["Zika virus disease and infection", "Zika virus disease, non-congenital"], "category": "Arbo"},
+
+    {"jp": "炭疽", "en": "Anthrax", "nndss_labels": ["Anthrax"], "category": "Bioterrorism"},
+    {"jp": "ペスト", "en": "Plague", "nndss_labels": ["Plague"], "category": "Bioterrorism"},
+    {"jp": "野兎病", "en": "Tularemia", "nndss_labels": ["Tularemia"], "category": "Vector"},
+    {"jp": "ブルセラ症", "en": "Brucellosis", "nndss_labels": ["Brucellosis"], "category": "Bacterial"},
+
+    {"jp": "Ｑ熱", "en": "Q fever", "nndss_labels": ["Q fever, Total", "Q fever, acute", "Q fever, chronic", "Q fever, Acute", "Q fever, Chronic"], "category": "Bacterial"},
+    {"jp": "発しんチフス", "en": "Spotted Fever Rickettsiosis", "nndss_labels": ["Spotted fever rickettsiosis"], "category": "Vector"},
+    {"jp": "レプトスピラ症", "en": "Leptospirosis", "nndss_labels": ["Leptospirosis"], "category": "Bacterial"},
+    {"jp": "ハンタウイルス肺症候群", "en": "Hantavirus", "nndss_labels": ["Hantavirus", "Hantavirus pulmonary syndrome", "Hantavirus infection, non-Hantavirus pulmonary syndrome", "Hantavirus infection, non-hantavirus pulmonary syndrome"], "category": "Viral"},
+
+    {"jp": "オウム病", "en": "Psittacosis", "nndss_labels": ["Psittacosis"], "category": "Zoonotic"},
+    {"jp": "狂犬病", "en": "Rabies", "nndss_labels": ["Rabies, Animal", "Rabies, animal", "Rabies, Human", "Rabies, human"], "category": "Zoonotic"},
+
+    {"jp": "鳥インフルエンザ（Ｈ５Ｎ１）", "en": "Novel Influenza A", "nndss_labels": ["Novel Influenza A virus infections", "Novel Influenza A virus infections, Total", "Novel Influenza A virus infections, Confirmed", "Influenza A virus subtypes (Novel)"], "category": "Emerging"},
+    {"jp": "エボラ出血熱", "en": "Ebola", "nndss_labels": ["Viral hemorrhagic fevers", "Viral hemorrhagic fevers, Ebola virus"], "category": "Emerging"},
+    {"jp": "クリミア・コンゴ出血熱", "en": "Crimean-Congo HF", "nndss_labels": ["Viral hemorrhagic fevers, Crimean-Congo hemorrhagic fever virus"], "category": "Emerging"},
+    {"jp": "ラッサ熱", "en": "Lassa fever", "nndss_labels": ["Viral hemorrhagic fevers, Lassa virus"], "category": "Emerging"},
+    {"jp": "マールブルグ病", "en": "Marburg", "nndss_labels": ["Viral hemorrhagic fevers, Marburg virus"], "category": "Emerging"},
+    {"jp": "リフトバレー熱", "en": "Rift Valley Fever", "nndss_labels": ["Viral hemorrhagic fevers, Rift Valley fever virus"], "category": "Emerging"},
+    {"jp": "エムポックス", "en": "Mpox", "nndss_labels": ["Mpox", "Smallpox", "Monkeypox"], "category": "Emerging"},
+    {"jp": "重症急性呼吸器症候群", "en": "SARS", "nndss_labels": ["Severe acute respiratory syndrome-associated coronavirus disease (SARS-CoV)"], "category": "Emerging"},
+
+    {"jp": "急性弛緩性麻痺", "en": "Acute Flaccid Myelitis", "nndss_labels": ["Acute flaccid myelitis"], "category": "Other"},
+    {"jp": "水痘（入院例に限る）", "en": "Varicella (Hospitalized)", "nndss_labels": ["Varicella morbidity", "Varicella disease", "Varicella (chickenpox), morbidity"], "category": "VPD"},
+
+    {"jp": "カルバペネム耐性腸内細菌目細菌感染症", "en": "CRE", "nndss_labels": ["Carbapenemase-producing carbapenem-resistant Enterobacteriaceae", "Carbapenemase-producing carbapenem-resistant Enterobacterales (CP-CRE)", "Carbapenemase-Producing Organisms (CPO), Total"], "category": "AMR"}
+  ]
+}
