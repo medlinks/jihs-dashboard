@@ -1,8 +1,18 @@
-"""Update ALERTS in dashboard.html: add new news items, remove old (>7 days)."""
-import re, json, os, datetime
+"""Update ALERTS in dashboard.html: add new news items, remove old (>7 days).
 
-ROOT = '/sessions/eager-laughing-sagan/mnt/claude'
-path = f'{ROOT}/dashboard.html'
+NOTE: Archived 2026-05-06. This is the 2026-04-29 one-shot patch script,
+preserved for history. The hardcoded ROOT to a stale session has been
+replaced with a project-root derivation so it is at least no longer broken
+by construction. For ongoing alert refresh use scripts/refresh_alerts.py
+at the project root, which fetches updates.html and applies the 7-day
+rolling window automatically.
+"""
+import re, json, os, datetime
+from pathlib import Path
+
+# Project root = parent of the parent of this file (archive/alerts/ → project root).
+ROOT = Path(__file__).resolve().parent.parent.parent
+path = ROOT / 'dashboard.html'
 
 with open(path, 'r', encoding='utf-8') as f:
     content = f.read()

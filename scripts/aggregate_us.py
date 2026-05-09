@@ -1,7 +1,10 @@
 """
 US NNDSS 全国合計データを集約 → 日本側と同形式の JSON + Excel に変換
 
-入力:  us/raw/nndss/{year}_national.json  （fetch_cdc_nndss.py が生成）
+入力 (優先順):
+  1) us/raw/nndss/{year}_national.json   （旧: 国家行のみフィルタ済み）
+  2) us/raw/nndss/{year}.json            （現: fetch_cdc_nndss.py が生成 - 全行）
+                                          全国行は load_year() で動的にフィルタ
 出力:
   - us/processed/us_full_data.json           （dashboard に注入する JSON）
   - us/processed/US_diseases_weekly.xlsx     （全疾病・全週・1 ファイル）
@@ -24,6 +27,17 @@ POP_FILE = ROOT / "us" / "population" / "us_population.csv"
 MAPPING_FILE = ROOT / "us" / "disease_mapping.json"
 
 YEARS = [2022, 2023, 2024, 2025, 2026]
+
+# NNDSS の年別「全国合計」行に使われる states 値のいずれか。
+# 2022/2024 は "US RESIDENTS"、2023 は両方混在、2025-2026 は "U.S. Residents" / "Total"。
+# 旧 _national.json はこれで予めフィルタ済み。新 {year}.json には州・領域も含むため、
+# load_year() でこの集合を使ってフィルタする。
+NATIONAL_LABELS = {
+    "US RESIDENTS",
+    "U.S. RESIDENTS",
+    "U.S. Residents",
+    "Total",
+}
 
 
 def load_population():
@@ -88,12 +102,31 @@ def safe_int(v):
 
 
 def load_year(year: int) -> list:
-    path = RAW_DIR / f"{year}_national.json"
-    if not path.exists():
-        print(f"  WARN: {path.name} なし")
-        return []
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+    """
+    Load the national-only NNDSS rows for `year`.
+
+    Preference order:
+      1) {year}_national.json — pre-filtered (legacy fetch_cdc_nndss output)
+      2) {year}.json          — full dataset (current fetch_cdc_nndss output);
+                                filter for national-total rows on the fly
+                                using NATIONAL_LABELS.
+    """
+    nat_path  = RAW_DIR / f"{year}_national.json"
+    full_path = RAW_DIR / f"{year}.json"
+
+    if nat_path.exists():
+        with open(nat_path, encoding="utf-8") as f:
+            return json.load(f)
+
+    if full_path.exists():
+        with open(full_path, encoding="utf-8") as f:
+            data = json.load(f)
+        nat_rows = [r for r in data if r.get("states") in NATIONAL_LABELS]
+        print(f"  {full_path.name}: {len(data)}行 → 全国 {len(nat_rows)}行 にフィルタ")
+        return nat_rows
+
+    print(f"  WARN: neither {nat_path.name} nor {full_path.name} なし")
+    return []
 
 
 def aggregate_weekly():

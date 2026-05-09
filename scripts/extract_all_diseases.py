@@ -1,5 +1,11 @@
 import openpyxl, json
 from collections import defaultdict
+from pathlib import Path
+
+# Project root = parent of the directory this script lives in.
+# Replaces previous hardcoded /sessions/sharp-zealous-archimedes/mnt/claude paths
+# so the script is portable across sessions.
+ROOT = Path(__file__).resolve().parent.parent
 
 SKIP = {'疾病@240','疾病@342','疾病@393','疾病@444','疾病@495','疾病@87',
         '疾病@447','疾病@192','疾病@243','疾病@294','疾病@396',
@@ -36,7 +42,7 @@ pref_latest = {}        # disease -> {pref: count}  latest data available
 pref_year   = {}        # disease -> which year the pref data came from
 
 for year in range(2013, 2027):
-    path = f'/sessions/sharp-zealous-archimedes/mnt/claude/weekly_extracted/IDWR{year}.xlsx'
+    path = str(ROOT / f'weekly_extracted/IDWR{year}.xlsx')
     try:
         wb = openpyxl.load_workbook(path, read_only=True)
     except Exception as e:
@@ -134,17 +140,18 @@ else:
 print(f'\nExtracted {len(trends)} diseases')
 
 # Load existing speed data
-with open('/sessions/sharp-zealous-archimedes/mnt/claude/scripts/full_dashboard_data.json') as f:
+JSON_PATH = ROOT / 'scripts' / 'full_dashboard_data.json'
+with open(JSON_PATH) as f:
     existing = json.load(f)
 
 # Replace weekly data with full set
 existing['weekly_trends'] = dict(trends)
 existing['weekly_pref']   = pref_latest
 
-with open('/sessions/sharp-zealous-archimedes/mnt/claude/scripts/full_dashboard_data.json', 'w', encoding='utf-8') as f:
+with open(JSON_PATH, 'w', encoding='utf-8') as f:
     json.dump(existing, f, ensure_ascii=False)
 
 print('Saved full_dashboard_data.json')
 import os
-size = os.path.getsize('/sessions/sharp-zealous-archimedes/mnt/claude/scripts/full_dashboard_data.json')
+size = os.path.getsize(JSON_PATH)
 print(f'File size: {size/1024:.0f} KB')
