@@ -29,8 +29,9 @@ def main():
 
     # 米国データを 1 つの const にまとめる
     payload = {
-        "us_weekly_trends": us["us_weekly_trends"],          # English keys (週次 m1 sum)
+        "us_weekly_trends": us["us_weekly_trends"],          # English keys (週次 m1 sum) — EN merged
         "us_weekly_trends_jp": us["us_weekly_trends_jp"],    # 日本疾病名（週次 m1 sum）
+        "us_weekly_trends_raw": us.get("us_weekly_trends_raw", {}),  # raw NNDSS labels（合併なし、map と整合）
         "us_annual_totals": us.get("us_annual_totals", {}),  # raw label 年累計 (m3 max)
         "us_annual_totals_en": us.get("us_annual_totals_en", {}),  # EN 合併 年累計（米国版年報棒図）
         "us_annual_totals_jp": us.get("us_annual_totals_jp", {}),  # JP 合併 年累計（国家対比年報）
@@ -54,6 +55,7 @@ def main():
         f"{block_start}\n"
         f"DATA.us_weekly_trends = {json.dumps(payload['us_weekly_trends'], ensure_ascii=False, separators=(',', ':'))};\n"
         f"DATA.us_weekly_trends_jp = {json.dumps(payload['us_weekly_trends_jp'], ensure_ascii=False, separators=(',', ':'))};\n"
+        f"DATA.us_weekly_trends_raw = {json.dumps(payload['us_weekly_trends_raw'], ensure_ascii=False, separators=(',', ':'))};\n"
         f"DATA.us_annual_totals = {json.dumps(payload['us_annual_totals'], ensure_ascii=False, separators=(',', ':'))};\n"
         f"DATA.us_annual_totals_en = {json.dumps(payload['us_annual_totals_en'], ensure_ascii=False, separators=(',', ':'))};\n"
         f"DATA.us_annual_totals_jp = {json.dumps(payload['us_annual_totals_jp'], ensure_ascii=False, separators=(',', ':'))};\n"

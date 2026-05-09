@@ -455,12 +455,29 @@ def main():
         print(f"  override {jp}: atlas={src} ({len(atlas_yrs)} yr finalized), "
               f"estimated {est_yrs} via ratio {ratio_s}")
 
+    # === Raw NNDSS label weekly trends (no merging) ===
+    # Each NNDSS label kept separate (e.g. "Syphilis, Primary and secondary" vs
+    # "Syphilis, Congenital" stay as two distinct series). Used by the dashboard
+    # US-only weekly view so the listing matches `us_state_latest_en` exactly,
+    # avoiding the "chart shows merged data, map shows per-stage" mismatch.
+    raw_aligned = {}
+    for _label, _rows in by_label.items():
+        _series = []
+        for _r in _rows:
+            _entry = {"year": _r["year"], "week": _r["week"], "total": _r["current"]}
+            _pop = population.get(_r["year"])
+            if _pop and _pop > 0:
+                _entry["rate_per_100k"] = round(_r["current"] / _pop * 100000, 4)
+            _series.append(_entry)
+        raw_aligned[_label] = _series
+
     # JSON 出力（dashboard 用）
     PROC_DIR.mkdir(parents=True, exist_ok=True)
     out_json = PROC_DIR / "us_full_data.json"
     payload = {
-        "us_weekly_trends": en_aligned,         # NNDSS English 名（週次、m1 sum）
+        "us_weekly_trends": en_aligned,         # NNDSS English 名（週次、m1 sum）— EN merged
         "us_weekly_trends_jp": jp_aligned,      # 日本疾病名で集約（週次、m1 sum）
+        "us_weekly_trends_raw": raw_aligned,    # raw NNDSS label 週次（合併なし、map と整合）
         "us_annual_totals": annual_totals,      # raw label 年累計（m3 max）
         "us_annual_totals_en": annual_totals_en,# EN 合併名 年累計（米国版年報棒図用）
         "us_annual_totals_jp": annual_totals_jp,# JP 合併名 年累計（国家対比年報用）
