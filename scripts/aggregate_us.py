@@ -396,6 +396,65 @@ def main():
         for y, v in per_year.items():
             bucket[y] = bucket.get(y, 0) + v
 
+    # === atlas/external override for JP-merged annual totals ===
+    # NNDSS Weekly only publishes a subset of stages for some diseases (e.g.,
+    # Syphilis: P&S + Congenital only — Latent/Late are STD*MIS-only).
+    # disease_mapping.json may declare an "annual_total_jp_override" pointing
+    # to a JSON file under us/raw/ with authoritative annual totals from a
+    # different CDC report (e.g., STI Surveillance Report). We override
+    # us_annual_totals_jp ONLY (not _en, not raw _annual_totals) because that
+    # field is the one consumed by the country-comparison chart, which is
+    # what suffers most from sub-stage truncation.
+    annual_totals_jp_override_log = []
+    with open(MAPPING_FILE, encoding="utf-8") as f:
+        _mapping_full = json.load(f)
+    for entry in _mapping_full.get("mapping", []):
+        ovr = entry.get("annual_total_jp_override")
+        if not ovr:
+            continue
+        jp = entry.get("jp")
+        if not jp or jp not in annual_totals_jp:
+            continue
+        ovr_path = ROOT / "us" / "raw" / ovr
+        if not ovr_path.exists():
+            print(f"  [warn] override file missing for {jp}: {ovr_path}")
+            continue
+        with open(ovr_path, encoding="utf-8") as f:
+            ovr_data = json.load(f)
+        atlas_totals = {str(y): int(v) for y, v in ovr_data.get("annual_totals", {}).items()}
+        if not atlas_totals:
+            continue
+        nndss_totals = annual_totals_jp[jp]  # {year_str: int}
+        # Compute scaling ratio from most recent overlap year (atlas / nndss).
+        overlap = sorted(set(atlas_totals) & set(map(str, nndss_totals)),
+                         key=lambda s: int(s) if str(s).isdigit() else 0)
+        ratio = None
+        if overlap:
+            ref_year = overlap[-1]
+            nndss_ref = nndss_totals.get(ref_year) or nndss_totals.get(int(ref_year))
+            atlas_ref = atlas_totals[ref_year]
+            if nndss_ref and nndss_ref > 0:
+                ratio = atlas_ref / nndss_ref
+        # Build merged: atlas where available, scaled-NNDSS otherwise.
+        merged = {}
+        all_years = sorted(set(map(str, list(atlas_totals) + list(nndss_totals))),
+                           key=lambda s: int(s) if str(s).isdigit() else 0)
+        for y in all_years:
+            if y in atlas_totals:
+                merged[y] = atlas_totals[y]
+            else:
+                base = nndss_totals.get(y) or nndss_totals.get(int(y))
+                if base is None:
+                    continue
+                merged[y] = int(round(base * ratio)) if ratio else int(base)
+        annual_totals_jp[jp] = merged
+        annual_totals_jp_override_log.append((jp, ovr, ratio, sorted(atlas_totals.keys()),
+                                              [y for y in merged if y not in atlas_totals]))
+    for jp, src, ratio, atlas_yrs, est_yrs in annual_totals_jp_override_log:
+        ratio_s = f"×{ratio:.2f}" if ratio else "n/a"
+        print(f"  override {jp}: atlas={src} ({len(atlas_yrs)} yr finalized), "
+              f"estimated {est_yrs} via ratio {ratio_s}")
+
     # JSON 出力（dashboard 用）
     PROC_DIR.mkdir(parents=True, exist_ok=True)
     out_json = PROC_DIR / "us_full_data.json"

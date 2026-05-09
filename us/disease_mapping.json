@@ -26,7 +26,7 @@
     {"jp": "ジアルジア症", "en": "Giardiasis", "nndss_labels": ["Giardiasis"], "category": "Enteric"},
     {"jp": "クリプトスポリジウム症", "en": "Cryptosporidiosis", "nndss_labels": ["Cryptosporidiosis"], "category": "Enteric"},
 
-    {"jp": "梅毒", "en": "Syphilis", "nndss_labels": ["Syphilis, Primary and secondary", "Syphilis, primary and secondary", "Syphilis, Congenital", "Syphilis, congenital", "Syphilis, total"], "category": "STI"},
+    {"jp": "梅毒", "en": "Syphilis", "nndss_labels": ["Syphilis, Primary and secondary", "Syphilis, primary and secondary", "Syphilis, Congenital", "Syphilis, congenital", "Syphilis, total"], "category": "STI", "annual_total_jp_override": "atlas/syphilis_total.json"},
 
     {"jp": "侵襲性インフルエンザ菌感染症", "en": "Invasive H. influenzae", "nndss_labels": ["Haemophilus influenzae, invasive disease", "Haemophilus influenzae, invasive disease, All ages, all serotypes"], "category": "Invasive"},
     {"jp": "侵襲性髄膜炎菌感染症", "en": "Invasive Meningococcal", "nndss_labels": ["Meningococcal disease", "Meningococcal disease, All serogroups"], "category": "Invasive"},
